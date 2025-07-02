@@ -19,8 +19,11 @@ The program solves an optimization problem: finding the optimal forest density t
 - **Color-coded states**: 
   - Black: Empty space
   - Green: Healthy trees
-  - Orange: Burning trees
+  - Orange: Burning trees  
   - Red: Burned trees
+
+![Color Legend](images/forest_legend.png)
+*Color coding system used in the simulation*
 
 ### Performance Optimization
 - **Multi-threading**: Parallel execution of simulations using `std::thread`
@@ -54,6 +57,9 @@ Based on extensive simulations on 50x50 grids:
 - **Optimal Density**: ~30-33% forest coverage
 - **Critical Threshold**: Above 40-50% density, fire damage increases dramatically
 - **Risk Assessment**: Below 30% density, fires remain localized; above 40%, fires can consume nearly 100% of trees
+
+![Results Graph](images/burned_vs_density.png)
+*Forest density vs. percentage of burned trees - showing critical threshold around 40% and optimal density below 33%*
 
 ### Performance Characteristics
 - **Low Density (1-20%)**: Very fast simulations, minimal fire spread
@@ -104,6 +110,9 @@ let handles: Vec<_> = (0..num_threads).map(|thread_id| {
 }).collect();
 ```
 
+![Code Example](images/code_structure.png)
+*Example of the forest simulation core structure*
+
 ### Memory Efficiency
 - Grid-based storage optimized for cache locality
 - Minimal memory allocation during simulation loops
@@ -116,6 +125,19 @@ Interactive real-time visualization showing:
 - Fire initiation and spread
 - Burn progression over time
 - Final damage assessment
+
+### Simulation States
+
+![Forest Initial State](images/forest_initial.png)
+*Initial forest state - green trees randomly distributed across the grid*
+
+![Fire Spread](images/fire_spread.png) 
+*Fire spreading through the forest - orange flames consuming trees*
+
+![After Fire](images/forest_burned.png)
+*Post-fire state - red burned areas with remaining green trees*
+
+The visualization clearly demonstrates how fire spreads differently based on forest density and tree distribution patterns.
 
 ## 🔮 Future Improvements
 
