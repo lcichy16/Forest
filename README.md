@@ -17,13 +17,10 @@ The program solves an optimization problem: finding the optimal forest density t
 ### Visualization
 - **Real-time rendering**: Interactive visualization using Macroquad framework
 - **Color-coded states**: 
-  - Black: Empty space
-  - Green: Healthy trees
-  - Orange: Burning trees  
-  - Red: Burned trees
-
-![Color Legend](images/forest_legend.png)
-*Color coding system used in the simulation*
+  - **Black**: Empty space
+  - **Green**: Healthy trees
+  - **Orange**: Burning trees  
+  - **Red**: Burned trees
 
 ### Performance Optimization
 - **Multi-threading**: Parallel execution of simulations using `std::thread`
