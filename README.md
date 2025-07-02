@@ -55,7 +55,7 @@ Based on extensive simulations on 50x50 grids:
 - **Critical Threshold**: Above 40-50% density, fire damage increases dramatically
 - **Risk Assessment**: Below 30% density, fires remain localized; above 40%, fires can consume nearly 100% of trees
 
-![Results Graph](images/burned_vs_density.png)
+![Results Graph](images/burned_density.png)
 *Forest density vs. percentage of burned trees - showing critical threshold around 40% and optimal density below 33%*
 
 ### Performance Characteristics
@@ -107,8 +107,6 @@ let handles: Vec<_> = (0..num_threads).map(|thread_id| {
 }).collect();
 ```
 
-![Code Example](images/code_structure.png)
-*Example of the forest simulation core structure*
 
 ### Memory Efficiency
 - Grid-based storage optimized for cache locality
