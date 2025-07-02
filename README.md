@@ -124,12 +124,15 @@ Interactive real-time visualization showing:
 ### Simulation States
 
 ![Forest Initial State](images/forest_initial.png)
+
 *Initial forest state - green trees randomly distributed across the grid*
 
 ![Fire Spread](images/fire_spread.png) 
+
 *Fire spreading through the forest - orange flames consuming trees*
 
 ![After Fire](images/forest_burned.png)
+
 *Post-fire state - red burned areas with remaining green trees*
 
 The visualization clearly demonstrates how fire spreads differently based on forest density and tree distribution patterns.
